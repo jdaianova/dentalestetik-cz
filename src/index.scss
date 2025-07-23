@@ -1,0 +1,45 @@
+@use './app/styles/vars' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-main);
+  font-weight: 400;
+  color: var(--color-text-dark);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
+}
+
+.swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 6px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-primary) !important;
+}
