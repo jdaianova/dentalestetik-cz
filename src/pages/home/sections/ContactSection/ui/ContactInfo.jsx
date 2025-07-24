@@ -1,25 +1,28 @@
-import imgAddress from '../../../../../shared/assets/img/imgAddress.png';
+import imgContacts from '../../../../../shared/assets/img/imgContacts.png';
 
 const ContactInfo = ({ className }) => {
     return (
         <div className={`${className} gap-4`}>
             <div className='w-full max-w-[292px] rounded-2xl overflow-hidden'>
-                <img src={imgAddress} />
+                <img src={imgContacts} className='h-full w-full object-cover' />
             </div>
 
             <div className='flex flex-col w-full rounded-2xl border-2 border-gray-300 
-                            justify-center items-center p-[32px]'>
-                <h5 className='font-title text-[24px] uppercase mb-[20px]'>Naše adresa</h5>
+                            justify-start items-center px-[32px] py-[48px]'>
 
-                <div>
-                    <h6 className='text-center text-[18px] uppercase mb-[20px] color-primary-dark font-bold'>
-                        Zubní ordinace - Anastasiia Neuimina
-                    </h6>
-
+                <div className='flex flex-col w-full mb-[40px]'>
+                    <h5 className='font-title text-[24px] uppercase mb-[20px] text-center'>
+                        Naš E-MAIL
+                        </h5>
                     <p className='text-center text-[18px]'>
-                        Purkyňova 35d,
-                        612 00 <br />
-                        Brno – Královo Pole
+                        tlustydok@gmail.com
+                    </p>
+                </div>
+
+                <div className='flex flex-col w-full mb-[40px]'>
+                    <h5 className='font-title text-[24px] uppercase mb-[20px] text-center'>Naš telefon</h5>
+                    <p className='text-center text-[18px]'>
+                        +420 725 439 518
                     </p>
                 </div>
             </div>
