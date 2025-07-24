@@ -3,6 +3,7 @@ import imgSerivce2 from '../../../../../shared/assets/img/service2.png';
 import imgSerivce3 from '../../../../../shared/assets/img/service3.png';
 import imgSerivce4 from '../../../../../shared/assets/img/service4.png';
 import imgSerivce5 from '../../../../../shared/assets/img/service5.png';
+import imgSerivce6 from '../../../../../shared/assets/img/service6.png';
 
 export const servicesData = [
     {
@@ -44,6 +45,6 @@ export const servicesData = [
         id: 6,
         title: 'DŮRAZ NA DETAILY',
         text: 'Každý krok pečlivě promýšlíme — kvalita je pro nás samozřejmost',
-        image: imgSerivce5,
+        image: imgSerivce6,
     },
 ];
