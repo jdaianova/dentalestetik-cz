@@ -2,6 +2,7 @@ const Button = ({
     type = 'primary', // secondary
     textBtn = 'btn',
     onClick,
+    className,
 }) => {
     const btnStyle = {
         primary: 'bg-primary text-white ',
@@ -16,7 +17,7 @@ const Button = ({
     return (
         <button
             onClick={onClick}
-            className={`${btnStyle[type]} btn-padding rounded-2xl whitespace-nowrap
+            className={`${className} ${btnStyle[type]} btn-padding rounded-2xl whitespace-nowrap
                         ${btnStyleHover[type]} text-[18px]
                         `}>
             {textBtn}

@@ -10,8 +10,11 @@ const WorkingHours = ({ className }) => {
     ];
 
     return (
-        <div className={`${className} flex flex-col w-full rounded-2xl border justify-start items-center 
-                            px-[32px] py-[48px]`}>
+        <div
+            className={`${className} flex flex-col w-full rounded-2xl border justify-start items-center 
+                            px-[32px] py-[48px]`}
+            style={{ borderColor: 'var(--color-border)' }}
+        >
             <h5 className='font-title text-[24px] uppercase mb-[20px] text-center'>
                 Ordinační hodiny
             </h5>
@@ -20,9 +23,14 @@ const WorkingHours = ({ className }) => {
                 {workingHours.map((item) => (
                     <div
                         key={item.day}
-                        className=""
+                        className="flex justify-between border-b border-dashed"
                     >
-                        <p>{item.day}</p>
+                        <p>
+                            {item.day}
+                        </p>
+                        <p>
+                            {item.time}
+                        </p>
                     </div>
                 ))}
             </div>
