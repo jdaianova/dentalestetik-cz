@@ -12,6 +12,16 @@ export default function tailwindText({ addUtilities }) {
       textTransform: 'uppercase',
     },
 
+    '.font-title': {
+      fontWeight: '700',
+      lineHeight: '1',
+      textTransform: 'uppercase',
+    },
+
+    '.font-bold': {
+      fontWeight: '700',
+    },
+
     '.font-numbers': {
       fontFamily: 'var(--font-numbers) !important',
       fontWeight: '600',
