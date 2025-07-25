@@ -16,7 +16,7 @@ const MapLocation = ({ className }) => {
             <iframe
                 src="https://www.google.com/maps/embed?pb=!4v1753376514430!6m8!1m7!1swBvhKSvjV9-vPkFOXfsUNg!2m2!1d49.22099229371065!2d16.58570901944036!3f288.1310200136147!4f10.543438187295223!5f0.7820865974627469"
                 width="100%"
-                height="300"
+                height="100%"
                 style={{ border: 0, borderRadius: "1rem" }}
                 allowFullScreen=""
                 loading="lazy"

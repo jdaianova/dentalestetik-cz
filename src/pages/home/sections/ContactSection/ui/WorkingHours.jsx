@@ -6,7 +6,6 @@ const WorkingHours = ({ className }) => {
         { day: "Středa", time: "11:00 – 17:00" },
         { day: "Čtvrtek", time: "8:00 – 15:00" },
         { day: "Pátek", time: "8:00 – 14:00" },
-        { day: "So – Ne", time: "ZAVŘENO" },
     ];
 
     return (
@@ -23,16 +22,27 @@ const WorkingHours = ({ className }) => {
                 {workingHours.map((item) => (
                     <div
                         key={item.day}
-                        className="flex justify-between border-b border-dashed"
+                        className="flex justify-between place-items-end h-[44px] border-b-2 border-dashed"
                     >
-                        <p>
+                        <p className="text-[20px] font-bold color-primary-dark">
                             {item.day}
                         </p>
-                        <p>
+
+                        <p className="text-[20px]">
                             {item.time}
                         </p>
+
                     </div>
                 ))}
+
+                <div className="flex justify-between place-items-end h-[44px]" >
+                    <p className="text-[20px] font-bold color-primary-dark">
+                        So – Ne
+                    </p>
+                    <p className="text-[20px] uppercase text-red-500 tracking-widest ">
+                        ZAVŘENO
+                    </p>
+                </div>
             </div>
         </div>
     )
