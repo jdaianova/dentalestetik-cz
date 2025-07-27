@@ -5,7 +5,7 @@ export const newsData = [
     {
         id: 1,
         title: 'ordinace je uzavřena',
-        text: '15.–28. července máme dovolenou. Ordinace bude opět otevřena 29. července.',
+        text: '20.–28. července máme dovolenou. Ordinace bude opět otevřena 29. července.',
         img: imgZavreno,
     },
 
