@@ -8,6 +8,16 @@ import OffersSection from "../sections/OffersSection/OffersSection";
 import PricingSection from "../sections/PricingSection/PricingSection";
 import ServicesSection from "../sections/ServicesSection/ui/ServicesSection";
 
+import imgOffers from "../../../shared/assets/img/imgOffers.png";
+
+const offersData = [
+  'Diagnostika kazů a zánětů',
+  'Rekonstrukce zubů',
+  'Endodontické ošetření',
+  'Protetika',
+  'Dětská stomatologie'
+];
+
 export const homepageSections = [
   {
     id: 'home',
@@ -50,9 +60,7 @@ export const homepageSections = [
     label: 'O nás',
     title: {
       text: { allPhrase: 'KDO JSME', accentWord: 'kdo' },
-      caption: `Vítejte na stránkách naší zubní ordinace, kde se snoubí osobní přístup malého týmu 
-                s technologiemi na špičkové úrovni a péčí zaměřenou na váš komfort, 
-                bezpečí a dlouhodobé výsledky`,
+      caption: `Vítejte na stránkách naší zubní ordinace, kde se snoubí osobní přístup s gmoderními technologiemi a péčí o váš komfort a zdraví`,
       side: 'left',
     },
     content: () => <AboutSection />,
@@ -64,8 +72,7 @@ export const homepageSections = [
     label: 'Služby',
     title: {
       text: { allPhrase: 'JAK PRACUJEME', accentWord: 'PRACUJEME' },
-      caption: `Každý detail má pro nás význam — propojujeme zkušenosti, empatii a moderní 
-                přístup ke každému ošetření s důrazem na kvalitu a pohodlí`,
+      caption: `Každý detail má pro nás význam — spojujeme zkušenosti, empatii a moderní přístup s důrazem na kvalitu, pohodlí a jistotu péče`,
       side: 'right',
     },
     content: () => <ServicesSection />,
@@ -77,12 +84,10 @@ export const homepageSections = [
     label: 'Přístup',
     title: {
       text: { allPhrase: 'Co nabízíme', accentWord: 'Co' },
-      caption: `Odhalíme problém, vše vám srozumitelně vysvětlíme, navrhneme řešení a 
-                postaráme se o váš úsměv s dlouhodobou péčí a důvěrou 
-                v příjemném a klidném prostředí`,
+      caption: `Odhalíme problém, vše vám srozumitelně vysvětlíme a postaráme se o váš úsměv s péčí, pohodlím a důvěrou v příjemném místě`,
       side: 'left',
     },
-    content: () => <OffersSection />,
+    content: () => <OffersSection offersData={offersData} img={imgOffers}/>,
     withBorder: true,
   },
 
@@ -91,7 +96,7 @@ export const homepageSections = [
     label: 'Ceník',
     title: {
       text: { allPhrase: 'Ceník našich služeb', accentWord: 'služeb' },
-      caption: `Konečnou cenu ošetření stanoví lékař podle složitosti zákroku a vašich individuálních potřeb`,
+      caption: `Konečnou cenu ošetření stanoví lékař podle složitosti zákroku a vašich individuálních potřeb s ohledem na péči, komfort a jistotu`,
       side: 'right',
     },
     content: () => <PricingSection />,
@@ -103,7 +108,7 @@ export const homepageSections = [
     label: '',
     title: {
       text: { allPhrase: 'Smluvní pojišt’ovny', accentWord: 'Smluvní' },
-      caption: `Přijímáme pacienty většiny zdravotních pojišťoven`,
+      caption: `Přijímáme pacienty většiny zdravotních pojišťoven a poskytujeme péči s důrazem na kvalitu, pohodlí, jistotu a individuální přístup`,
       side: 'left',
     },
     content: () => <InsurersSection />,
@@ -115,7 +120,7 @@ export const homepageSections = [
     label: 'Kontakty',
     title: {
       text: { allPhrase: 'Kde nás najdete', accentWord: 'nás' },
-      caption: "725 439 518",
+      caption: "Najdete nás na uvedené adrese, veškerá komunikace a objednávky probíhají pouze telefonicky pro rychlé a jasné domluvení",
       side: 'right',
     },
     content: () => <ContactSection />,

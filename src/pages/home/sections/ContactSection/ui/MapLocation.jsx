@@ -14,7 +14,7 @@ const MapLocation = ({ className }) => {
             </a>
 
             <iframe
-                src="https://www.google.com/maps/embed?pb=!4v1753376514430!6m8!1m7!1swBvhKSvjV9-vPkFOXfsUNg!2m2!1d49.22099229371065!2d16.58570901944036!3f288.1310200136147!4f10.543438187295223!5f0.7820865974627469"
+                src="https://www.google.com/maps/embed?pb=!4v1753818435149!6m8!1m7!1s-yNpSISCbCEXp8I9EhD9zQ!2m2!1d49.22082581934399!2d16.58581168017686!3f224.89!4f-11.819999999999993!5f0.7820865974627469!5m2!1scs!2scz"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: "1rem" }}
@@ -22,6 +22,8 @@ const MapLocation = ({ className }) => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade">
             </iframe>
+
+
 
         </div>
     );

@@ -4,12 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100%;
 }
 
 html {
@@ -42,4 +55,8 @@ ol {
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--color-primary) !important;
+}
+
+.swiper-wrapper-visible {
+  overflow: visible !important;
 }

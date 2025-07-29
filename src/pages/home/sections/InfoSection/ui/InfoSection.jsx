@@ -2,7 +2,9 @@ import NewsSlider from "./NewsSlider"
 
 const InfoSection = () => {
     return (
-        <NewsSlider />
+        <>
+            <NewsSlider />
+        </>
     )
 }
 

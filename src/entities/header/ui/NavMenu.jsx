@@ -1,5 +1,7 @@
 import { homepageSections } from "../../../pages/home/lib/sections";
 import { useEffect, useState } from 'react';
+import NavLink from "./NavLink";
+import MobileMenu from "./MobileMenu";
 
 const NavMenu = () => {
     const navItems = homepageSections
@@ -7,6 +9,9 @@ const NavMenu = () => {
         .map(section => ({ id: section.id, label: section.label }));
 
     const [activeId, setActiveId] = useState(navItems[0].id || '');
+
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(prev => !prev);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -23,19 +28,24 @@ const NavMenu = () => {
     }, []);
 
     return (
-        <nav className="flex w-[60%]">
-            {navItems.map(({ id, label }) => (
-                <a
-                    key={id}
-                    href={`#${id}`}
-                    className={`flex w-full justify-center py-[10px] transition-colors text-[20px]
-                                hover:color-text-dark rounded-t-2xl
-                                ${id === activeId ? 'bg-primary-light' : 'color-primary-dark'}
-                                `}>
-                    {label}
-                </a>
-            ))}
-        </nav>
+        <div className={`flex w-full justify-end items-end h-full`}>
+            <nav className={`hidden md:flex w-full 
+                            md:max-w-[90%] lg:max-w-[70%] md:pr-[50px]
+                            `}>
+                {navItems.map(({ id, label }) => (
+                    <NavLink key={id} id={id} label={label} activeId={activeId} />
+                ))}
+            </nav>
+
+            <div className="md:hidden pr-[20px] sm:pr-[40px] md:pr-[50px]">
+                <MobileMenu
+                    navItems={navItems}
+                    activeId={activeId}
+                    isOpen={isOpen}
+                    toggle={toggle}
+                />
+            </div>
+        </div>
     );
 };
 

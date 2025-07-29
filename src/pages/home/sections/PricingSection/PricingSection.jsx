@@ -3,11 +3,11 @@ import PricingBlock from "./ui/PricingBlock"
 
 const PricingSection = () => {
     return (
-        <div className="flex w-full gap-10">
+        <div className="flex flex-wrap w-full gap-10">
             {pricingData.map((service) => (
                 <div
                     key={service.id}
-                    className={`flex flex-col w-full bg-primary-light rounded-2xl 
+                    className={`flex flex-col w-[48%] bg-primary-light rounded-2xl 
                                 p-[40px] pb-[60px]
                                 `}>
 

@@ -5,7 +5,9 @@ import Header from "./widgets/header/Header"
 function App() {
 
   return (
-    <div className="app pt-[80px]">
+    <div className={`flex flex-col items-center w-screen
+                    pt-[60px] sm:pt-[70px] lg:pt-[80px]
+                    `}>
       <Header />
       <Homepage />
       <Footer />

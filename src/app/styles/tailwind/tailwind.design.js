@@ -8,6 +8,10 @@ export default function tailwindDesign({ addUtilities }) {
       borderBottom: '2px solid var(--color-primary)',
     },
 
+    '.mobile-menu-border': {
+      borderTop: '2px solid var(--color-primary)',
+    },
+
     '.border-primary': {
       border: '1px solid var(--color-primary)',
     },
@@ -15,10 +19,6 @@ export default function tailwindDesign({ addUtilities }) {
     '.text-block': {
       backgroundColor: 'var(--color-primary-light)',
       padding: 'var(--text-block-padding-y) var(--section-padding-x)',
-    },
-
-    '.btn-padding': {
-      padding: 'var(--btn-padding-y) var(--btn-padding-x)',
     },
 
   });

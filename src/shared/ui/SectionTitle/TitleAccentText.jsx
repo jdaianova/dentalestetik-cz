@@ -7,7 +7,9 @@ const TitleAccentText = ({ title }) => {
     const parts = allPhrase.split(regex);
 
     return (
-        <h2 className="font-section-title whitespace-nowrap">
+        <h2 className={`whitespace-nowrap font-bold uppercase leading-none
+                        text-[32px] sm:text-[32px] md:text-[44px] lg:text-[56px]
+                    `}>
             {parts.map((part, index) =>
                 part.toLowerCase() === accentWord.toLowerCase() ? (
                     <span key={index} className="color-primary">
@@ -22,3 +24,9 @@ const TitleAccentText = ({ title }) => {
 };
 
 export default TitleAccentText;
+
+
+    //   fontSize: 'var(--font-size-section-title)',
+    //   fontWeight: '700',
+    //   lineHeight: '1',
+    //   textTransform: 'uppercase',

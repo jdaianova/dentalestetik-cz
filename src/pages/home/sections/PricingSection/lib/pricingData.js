@@ -18,8 +18,8 @@ export const pricingData = [
             {
                 id: 'pricelist_1_3',
                 title: 'Konzultace',
-                subTitle: '1300',
-                price: 'hradí  ZP',
+                subTitle: '',
+                price: '1300 Kč',
             },
         ],
     },

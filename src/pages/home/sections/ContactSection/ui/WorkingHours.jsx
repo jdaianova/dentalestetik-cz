@@ -18,7 +18,7 @@ const WorkingHours = ({ className }) => {
                 Ordinační hodiny
             </h5>
 
-            <div>
+            <div className="flex flex-col w-full">
                 {workingHours.map((item) => (
                     <div
                         key={item.day}

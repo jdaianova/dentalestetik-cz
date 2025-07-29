@@ -11,8 +11,8 @@ const AboutSection = () => {
     return (
         <div className="flex w-full flex-row gap-14 items-stretch">
             <ImgBlock image={imgAbout} />
-            <div className="text-block rounded-2xl max-w-[730px]">
-                <p className="text-paragraph">{textAbout}</p>
+            <div className="flex w-full bg-primary-light rounded-2xl max-w-[730px] p-[40px]">
+                <p className="text-[20px] leading-loose">{textAbout}</p>
             </div>
         </div>
     )

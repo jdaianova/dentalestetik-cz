@@ -2,7 +2,7 @@ import imgAddress from '../../../../../shared/assets/img/imgAddress.png';
 
 const Address = ({ className }) => {
     return (
-        <div className={`${className} gap-4`}>
+        <div className={`${className} gap-4 max-h-[280px]`}>
             <div className='w-full max-w-[292px] rounded-2xl overflow-hidden'>
                 <img src={imgAddress} className='h-full w-full object-cover' />
             </div>

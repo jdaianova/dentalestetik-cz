@@ -1,15 +1,7 @@
 import ImgBlock from "../../../../shared/ui/ImgBlock/ImgBlock";
-import imgOffers from "../../../../shared/assets/img/imgOffers.png";
 import checkCircle from "../../../../shared/assets/svg/checkCircle.svg";
 
-const OffersSection = () => {
-    const offersData = [
-        'Diagnostika kazů a zánětů',
-        'Rekonstrukce zubů',
-        'Endodontické ošetření',
-        'Protetika',
-        'Dětská stomatologie'
-    ];
+const OffersSection = ({offersData, img}) => {
 
     return (
         <div className="flex flex-row items-stretch w-full gap-[40px]">
@@ -23,7 +15,7 @@ const OffersSection = () => {
             </div>
             
             <div className="flex w-full max-w-[300px]">
-                <ImgBlock image={imgOffers} side='right' />
+                <ImgBlock image={img} side='right' />
             </div>
 
         </div>

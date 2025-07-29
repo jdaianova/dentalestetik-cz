@@ -1,12 +1,9 @@
-@use './breakpoints' as *;
-
 :root {
   //fonts
   --font-main: 'Inter', sans-serif;
   --font-numbers: 'DM Sans', sans-serif;
 
   --font-size-paragraph: 16px;
-  --font-size-section-title: 56px;
 
   --line-height-paragraph: 2;
 
@@ -23,55 +20,4 @@
 
   --color-border: #E3E8E8;
 
-  // paddings
-  --section-padding-x: 20px;
-  --section-padding-y: 40px;
-  --text-block-padding-x: 22px;
-  --text-block-padding-y: 16px;
-
-  //gaps
-  --section-gap: 20px;
-
-  // widths
-  --container-max-width: 1200px;
-
-}
-
-@media (min-width: #{$breakpoint-sm}) {
-  :root {
-    //fonts
-    --font-size-paragraph: 18px;
-    --line-height-paragraph: 2;
-    --font-size-section-title: 56px;
-
-    // paddings
-    --section-padding-x: 40px;
-    --section-padding-y: 60px;
-    --text-block-padding-x: 32px;
-    --text-block-padding-y: 28px;
-
-    //gaps
-    --section-gap: 40px;
-  }
-}
-
-@media (min-width: #{$breakpoint-md}) {
-  :root {
-    //fonts
-    --font-size-paragraph: 20px;
-    --line-height-paragraph: 2;
-    --font-size-section-title: 56px;
-    --font-size-btn: 18px;
-
-    // paddings
-    --section-padding-x: 60px;
-    --section-padding-y: 80px;
-    --text-block-padding-x: 44px;
-    --text-block-padding-y: 36px;
-    --btn-padding-x: 32px;
-    --btn-padding-y: 16px;
-
-    //gaps
-    --section-gap: 60px;
-  }
 }
